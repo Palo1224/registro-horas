@@ -16,7 +16,8 @@
 
   <form method="POST">
     <input type="text" name="proyecto" placeholder="Proyecto" required>
-    <input type="date" name="fecha" required>
+   <input type="date" name="fecha" min="2025-01-01" max="2025-12-31" required>
+
     <input type="number" name="horas" step="0.1" placeholder="Horas" required>
     <textarea name="comentario" placeholder="Comentario (opcional)"></textarea>
     <button type="submit">Guardar</button>
