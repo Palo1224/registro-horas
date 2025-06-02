@@ -32,6 +32,7 @@ def index():
             comentario=request.form["comentario"]
         )
         db.session.add(nuevo)
+        print(nuevo)
         db.session.commit()
         return redirect("/")
 
